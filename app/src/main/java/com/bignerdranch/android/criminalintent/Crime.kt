@@ -4,35 +4,24 @@ import java.util.*
 
 class Crime {
 
-    var mId : UUID = TODO()
-        get() {
-            return mId
-        }
+    var mId : UUID = UUID.randomUUID()
+
     var mTitle : String
         get() {
             return mTitle
         }
-        set(title : String) {
+        set(title) {
             mTitle = title
         }
-    var mDate : Date
-        get() {
-            return mDate
-        }
-        set(date : Date) {
-            mDate = date
-        }
+
+    var mDate : Date = Date()
+
     var mSolved : Boolean
         get() {
             return mSolved
         }
-        set(solved : Boolean) {
+        set(solved) {
             mSolved = solved
         }
-
-    init {
-        mId = UUID.randomUUID()
-        mDate = Date()
-    }
 
 }
